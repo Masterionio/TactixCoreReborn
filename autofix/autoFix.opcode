@@ -1,0 +1,4 @@
+CLEAR /cache/*
+SET_PERMISSION ./ TO 755
+RESTART_SERVICE tactixcore
+RETURN "Fixes completed"

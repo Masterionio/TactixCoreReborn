@@ -1,0 +1,15 @@
+{
+  "app_name": "TactixCore Reborn",
+  "version": "1.0.0",
+  "build": "stable-release",
+  "author": "Masterionio",
+  "license": "MIT",
+  "modules": [
+    "boost_engine",
+    "ai_optimizer",
+    "security_core",
+    "quarantine",
+    "firewall_monitor"
+  ],
+  "entry": "main.py"
+}

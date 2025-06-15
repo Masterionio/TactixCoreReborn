@@ -1,0 +1,21 @@
+#!/bin/bash
+# main.shell – Main Bootup Script (Linux/macOS)
+
+echo "🧠 Launching TactixCore Main Shell Engine..."
+echo "📄 Checking main.yaml..."
+if [ ! -f main.yaml ]; then
+  echo "❌ Missing: main.yaml"
+  exit 1
+fi
+
+echo "✅ main.yaml found."
+START_INDEX=$(grep 'auto_start_index:' main.yaml | awk '{print $2}')
+
+if [ "$START_INDEX" = "true" ]; then
+  echo "🔁 Booting index.shell..."
+  bash index.shell
+else
+  echo "🕹 Manual mode enabled. Run index.shell manually."
+fi
+
+echo "🧬 TactixCore is on standby."

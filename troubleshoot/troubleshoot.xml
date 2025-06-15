@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagnostics>
+  <check id="1" name="disk_space" status="pending" />
+  <check id="2" name="ram" status="pending" />
+  <check id="3" name="internet" status="pending" />
+  <check id="4" name="log_scan" status="pending" />
+</diagnostics>

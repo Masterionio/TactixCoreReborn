@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TactixCore Reborn</title>
+  <style>
+    :root {
+      --bg-color: #0c1015;
+      --card-bg: #1b222a;
+      --accent: #00ffc6;
+      --danger: #ff4f4f;
+      --safe: #00ff91;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg-color);
+      font-family: var(--font);
+      color: #e4e4e4;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #101820;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #888;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      box-shadow: 0 0 12px #00ffc610;
+      padding: 1.5rem;
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 20px #00ffc640;
+    }
+
+    .card h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    .card.danger h2 {
+      color: var(--danger);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TactixCore Reborn</h1>
+    <p>Performance Engine + Full Security Suite</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>🚀 Boost Engine</h2>
+      <p>Switch between Ultra, Balanced, Battery Saver & AI Optimized modes. Kernel-accelerated with real-time tuning.</p>
+    </div>
+
+    <div class="card">
+      <h2>📊 Resource Monitor</h2>
+      <p>Live CPU, GPU, RAM, and I/O tracking. Monitor and auto-regulate system strain intelligently.</p>
+    </div>
+
+    <div class="card danger">
+      <h2>🛡 Threat Scanner</h2>
+      <p>Real-time malware and vulnerability scanner. Uses heuristic + behavior analysis.</p>
+    </div>
+
+    <div class="card danger">
+      <h2>📦 Quarantine Vault</h2>
+      <p>Suspicious files are moved here. Review, analyze, or permanently erase them with zero-trace deletion.</p>
+    </div>
+
+    <div class="card danger">
+      <h2>🔥 Permanent Eraser</h2>
+      <p>Military-grade multi-pass file eraser. Once deleted, recovery is impossible. Use with caution.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌐 Firewall Monitor</h2>
+      <p>Visualize incoming/outgoing traffic. Block, allow, or throttle based on behavior and source trust.</p>
+    </div>
+
+    <div class="card">
+      <h2>🔧 Config System</h2>
+      <p>INI + YAML + TOML detected:<br>
+        <code>config.ini</code>, <code>settings.yaml</code>, <code>profiles.toml</code><br>
+        All modules auto-loaded.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 TactixCore — Secured. Boosted. Reborn.
+  </footer>
+</body>
+</html>

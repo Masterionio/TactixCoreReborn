@@ -38,21 +38,21 @@ It leverages powerful scripts, smart configuration parsing, and future-ready mod
 
 ## 📁 File Structure
 TactixCore-Reborn/
-├── index.html
-├── config.ini
-├── settings.yaml
-├── config/profiles.toml
-├── config/system.xml
-├── modules/
-│ ├── ai_optimizer.py
-│ ├── boost_engine.cpp
-│ ├── cleaner.sh
-│ ├── scan.ps1
-│ ├── firewall.asm
-├── launcher/
-│ ├── tactixcore.kts
-│ ├── tactixcore.csproj
-├── assets/
-│ └── themes/
-├── README.md
-├── LICENSE
+- ├── index.html
+- ├── config.ini
+- ├── settings.yaml
+- ├── config/profiles.toml
+- ├── config/system.xml
+- ├── modules/
+- │ ├── ai_optimizer.py
+- │ ├── boost_engine.cpp
+- │ ├── cleaner.sh
+- │ ├── scan.ps1
+- │ ├── firewall.asm
+- ├── launcher/
+- │ ├── tactixcore.kts
+- │ ├── tactixcore.csproj
+- ├── assets/
+- │ └── themes/
+- ├── README.md
+- ├── LICENSE

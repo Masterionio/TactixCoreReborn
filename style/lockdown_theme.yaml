@@ -1,0 +1,9 @@
+theme:
+  current: "Dark"
+  emergency_override: true
+  override_color: "#ff4444"
+
+modes:
+  safe_ui: true
+  terminal_overlay: true
+  firewall_warning: true

@@ -1,0 +1,9 @@
+// Shellcode-style auto fix
+mov rdi, "Applying TactixCore fixes"
+call print
+
+call clear_cache
+call fix_permissions
+call restart_services
+
+ret

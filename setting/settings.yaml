@@ -1,0 +1,14 @@
+general:
+  app_name: TactixCore Reborn
+  version: 2.0.0
+  language: en-US
+  theme: dark
+
+security:
+  enable_firewall: true
+  auto_delete_dangerous_files: true
+  scan_interval_minutes: 60
+
+performance:
+  boost_mode: balanced
+  max_cache_size_mb: 512

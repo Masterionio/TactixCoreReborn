@@ -1,0 +1,77 @@
+# index.yaml — Primary YAML Config for TactixCore Reborn
+
+meta:
+  version: 1.0.0
+  author: Masterionio
+  license: MIT
+  mode: secure
+  theme: dark-bitdefender
+
+features:
+  boost_engine: true
+  ai_optimizer: true
+  resource_monitor: true
+  firewall_monitor: true
+  threat_scanner: true
+  quarantine_zone: true
+  permanent_eraser: true
+  file_immunizer: false  # Coming soon
+
+performance:
+  default_mode: AI Optimized
+  available_modes:
+    - Ultra Performance
+    - Balanced
+    - Battery Saver
+    - AI Optimized
+  auto_optimize_every: 5  # minutes
+  cache_clear_on_start: true
+
+scanner:
+  heuristic_detection: true
+  behavior_analysis: true
+  realtime_protection: true
+  scan_extensions:
+    - exe
+    - dll
+    - sys
+    - js
+    - py
+  excluded_paths:
+    - /system/core/
+    - /usr/lib/
+    - C:\\Windows\\System32\\
+
+quarantine:
+  path: quarantine/
+  max_days_to_keep: 30
+  auto_delete_dangerous: true
+  review_before_deletion: true
+
+eraser:
+  zero_trace_enabled: true
+  overwrite_passes: 7
+  delay_between_passes_ms: 500
+  require_confirmation: true
+
+firewall:
+  enable_monitoring: true
+  block_suspicious_ports: true
+  trusted_ips:
+    - 127.0.0.1
+    - "::1"
+    - 192.168.1.1
+  blocked_ips:
+    - 13.66.58.251
+    - 45.13.253.23
+
+logging:
+  enable: true
+  log_folder: logs/
+  log_level: INFO
+  include_scan_results: true
+
+ui:
+  auto_dark_mode: true
+  animation_speed: fast
+  language: en-US

@@ -1,0 +1,4 @@
+<integrity>
+  <check file="config/config.ini" hash="EXPECTED_HASH_VALUE"/>
+  <check file="settings/settings.yaml" hash="EXPECTED_HASH_VALUE"/>
+</integrity>

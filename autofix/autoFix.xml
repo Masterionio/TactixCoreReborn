@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<autofix>
+  <step id="1">Clear Cache</step>
+  <step id="2">Reset Permissions</step>
+  <step id="3">Restart Services</step>
+  <status>success</status>
+</autofix>

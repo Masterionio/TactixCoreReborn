@@ -1,0 +1,15 @@
+# main.yaml — Global Feature Flags
+
+safe_mode: true
+auto_start_index: true
+enable_debug_logs: false
+log_rotation_days: 5
+theme: "bitdefender-dark"
+
+modules:
+  boost_engine: true
+  firewall_monitor: true
+  quarantine: true
+  smart_scan: true
+  file_eraser: true
+  ai_optimizer: false  # toggle on demand

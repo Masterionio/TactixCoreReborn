@@ -1,0 +1,6 @@
+LOAD system_status
+IF system.disk < 15% THEN FLAG "Low disk space"
+IF mem.available < 500MB THEN FLAG "Low RAM"
+CHECK connection TO 8.8.8.8
+PARSE logs/*.log FOR "error"
+RETURN diagnostics_summary

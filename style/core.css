@@ -1,0 +1,38 @@
+/* TactixCore: Bitdefender x Proton inspired UI */
+body {
+  margin: 0;
+  background-color: #0f1117;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #161b22, #1a1f27);
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #00ffcc;
+  border-bottom: 1px solid #2d3748;
+}
+
+button {
+  background: #00ffcc;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00e6b8;
+}
+
+.section {
+  padding: 2rem;
+  background-color: #1a1f27;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #00ffcc50;
+}

@@ -1,0 +1,3 @@
+[SECURITY] 2025-06-15 12:00:10 - Suspicious config pattern found in config.ini
+[SECURITY] 2025-06-15 12:01:05 - World-writable file: settings/config.bash
+[SECURITY] 2025-06-15 12:02:20 - Process using 780MB memory: unknown_rev_shell

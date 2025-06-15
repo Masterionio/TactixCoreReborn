@@ -1,0 +1,74 @@
+#!/bin/bash
+# index.shell — TactixCore Reborn Shell Launcher
+# Author: Masterionio
+# Version: 1.0.0
+
+APP_NAME="TactixCore Reborn"
+CONFIG_DIR="./config"
+QUARANTINE_DIR="./quarantine"
+LOG_DIR="./logs"
+PYTHON_EXEC="python3"
+
+echo "🧠 Welcome to $APP_NAME"
+echo "=============================="
+echo "Initializing core modules..."
+sleep 1
+
+# Step 1: Verify Required Files
+REQUIRED_FILES=("index.py" "index.yaml" "$CONFIG_DIR/profiles.toml" "$CONFIG_DIR/system.xml" "$CONFIG_DIR/config.ini")
+
+for file in "${REQUIRED_FILES[@]}"; do
+  if [ ! -f "$file" ]; then
+    echo "❌ Missing: $file"
+    MISSING=true
+  fi
+done
+
+if [ "$MISSING" = true ]; then
+  echo "⚠️ One or more config files are missing. Aborting launch."
+  exit 1
+fi
+
+# Step 2: Launch Python Core
+echo "✅ All configs loaded successfully."
+echo "🧪 Running system core logic via index.py..."
+$PYTHON_EXEC index.py
+
+# Step 3: Check Quarantine
+if [ -d "$QUARANTINE_DIR" ]; then
+  echo "🗂 Quarantine folder found. Checking contents..."
+  FILE_COUNT=$(ls -1q "$QUARANTINE_DIR" | wc -l)
+  echo " → $FILE_COUNT file(s) quarantined."
+else
+  echo "📦 No quarantine folder found. Creating..."
+  mkdir -p "$QUARANTINE_DIR"
+fi
+
+# Step 4: Logging Setup
+if [ ! -d "$LOG_DIR" ]; then
+  echo "📝 Logs directory missing. Creating..."
+  mkdir -p "$LOG_DIR"
+else
+  echo "📁 Logging active in: $LOG_DIR"
+fi
+
+# Step 5: Launch Mode Selector (Demo)
+echo ""
+echo "🔧 Select Boost Mode:"
+echo "  1) Ultra Performance"
+echo "  2) Balanced"
+echo "  3) Battery Saver"
+echo "  4) AI Optimized"
+read -p "Choose a mode [1-4]: " mode
+
+case $mode in
+  1) echo "⚡ Activating Ultra Performance mode...";;
+  2) echo "🔄 Activating Balanced mode...";;
+  3) echo "🔋 Activating Battery Saver mode...";;
+  4) echo "🤖 Activating AI Optimized mode...";;
+  *) echo "❌ Invalid selection. Skipping boost.";;
+esac
+
+echo ""
+echo "✅ $APP_NAME is now active and monitoring."
+echo "🧬 Stay sharp. Stay fast. Stay safe."

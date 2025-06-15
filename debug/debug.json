@@ -1,0 +1,14 @@
+{
+  "logs": [
+    {
+      "timestamp": "2025-06-15T09:00:00Z",
+      "level": "INFO",
+      "message": "TactixCore started successfully."
+    },
+    {
+      "timestamp": "2025-06-15T09:05:44Z",
+      "level": "ERROR",
+      "message": "Failed to connect to update server."
+    }
+  ]
+}

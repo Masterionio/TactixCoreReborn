@@ -1,0 +1,14 @@
+<!-- script.xml — Sample UI config or layout for TactixCore -->
+
+<dashboard>
+  <header>
+    <title>TactixCore Reborn</title>
+    <version>1.0.0</version>
+  </header>
+  <modules>
+    <module name="boost_engine" enabled="true" />
+    <module name="security_core" enabled="true" />
+    <module name="quarantine" enabled="true" />
+    <module name="firewall_monitor" enabled="true" />
+  </modules>
+</dashboard>

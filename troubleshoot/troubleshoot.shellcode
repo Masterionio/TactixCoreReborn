@@ -1,0 +1,9 @@
+// Shellcode pseudocode - diagnostic flags
+mov rdi, "Running TactixCore diagnostic"
+call print
+
+call check_disk
+call check_network
+call check_logs
+
+ret

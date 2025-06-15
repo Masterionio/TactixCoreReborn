@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logs>
+  <log>
+    <timestamp>2025-06-15T09:00:00Z</timestamp>
+    <level>INFO</level>
+    <message>TactixCore started successfully.</message>
+  </log>
+  <log>
+    <timestamp>2025-06-15T09:05:44Z</timestamp>
+    <level>ERROR</level>
+    <message>Failed to connect to update server.</message>
+  </log>
+</logs>

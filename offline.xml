@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<status>
+  <code>503</code>
+  <message>Service Unavailable - Offline Mode Activated</message>
+  <details>
+    <timestamp>{{timestamp}}</timestamp>
+    <recommendation>Check your internet connection and retry.</recommendation>
+    <help_url>https://yourdomain.com/support</help_url>
+  </details>
+</status>
